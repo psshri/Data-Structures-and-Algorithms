@@ -1,3 +1,11 @@
+Ref:
+https://www.geeksforgeeks.org/memory-layout-of-c-program/
+https://www.youtube.com/watch?v=xyBbocLXbNY&list=PL2_aWCzGMAwLSqGsERZGXGkA5AfMhcknE&index=2
+https://www.youtube.com/watch?v=5_5oE5lgrhw&list=PLu0W_9lII9ahIappRPN0MCAgtOu3lQjQi&index=2
+
+
+
+##############################################################################
 RAM is also called as Main Memory
 
 A computer program uses RAM for its execution
@@ -17,3 +25,26 @@ the extension of .exe on windows
 A number of programs are executed at the same time, so CPU and RAM are shared
 by all the programs. Operating System is responsible to share CPU and RAM 
 between the programs. 
+
+The memory that is assigned to a program in a typical architecture can be 
+divided into four segments.
+1) Code (Text): Stores the instructions that needs to be executed
+2) Static/Global: Global variables
+3) Stack: Function calls, local variables
+4) Heap: Dynamic memory allocation
+
+When a program starts the OS reserves some amount of memory to the stack, if
+the function calls exceeds the memory beyond the one that is reserved for stack
+then this situation is called stack overflow. An example of this is infinite 
+function call in recursion.
+
+If we want to decalare a large array, especially if the size of the array is
+determined mid-way during the program execution, then it is not a good idea to
+declare it in the stack section of the memory. Or if we want to keep the 
+variable in the memory till the time we want, we use heap. 
+
+Functions used for dynamic memory allocation in C:
+malloc, calloc, realloc, free
+Functions used for dynamic memory allocation in C++:
+new, delete
+
