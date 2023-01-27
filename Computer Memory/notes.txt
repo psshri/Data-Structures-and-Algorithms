@@ -1,0 +1,19 @@
+RAM is also called as Main Memory
+
+A computer program uses RAM for its execution
+A computer program is stored in hard disk
+
+Stack section of the RAM is used for functions calls for a program
+
+Heap section of the RAM is used to allocate dynamic memory for data
+
+If we keep on requesting memory from heap and do not free the space after its 
+intended usage, then this condition is known as memory leak
+
+A compiler converts a program written in a high level language to machine level
+language (which is binary). The compiler creates an executable file, which has 
+the extension of .exe on windows
+
+A number of programs are executed at the same time, so CPU and RAM are shared
+by all the programs. Operating System is responsible to share CPU and RAM 
+between the programs. 
