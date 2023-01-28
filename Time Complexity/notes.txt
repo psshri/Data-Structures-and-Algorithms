@@ -1,0 +1,26 @@
+Refs:
+https://www.youtube.com/playlist?list=PL2_aWCzGMAwI9HK8YPVBjElbLbI3ufctn
+https://www.youtube.com/watch?v=vgSKOMsjLbc&list=PLu0W_9lII9ahIappRPN0MCAgtOu3lQjQi&index=2
+https://www.youtube.com/watch?v=1OTX-WXQHCQ&list=PLu0W_9lII9ahIappRPN0MCAgtOu3lQjQi&index=3
+https://www.youtube.com/watch?v=5g7K86jYto8&list=PLu0W_9lII9ahIappRPN0MCAgtOu3lQjQi&index=4
+https://www.youtube.com/watch?v=STL8ESuETmM&list=PLu0W_9lII9ahIappRPN0MCAgtOu3lQjQi&index=5
+
+
+################################################
+
+Time complexity is the study of efficiency of algorithms. Time complexity of
+a program is a simple measurement of how fast the time taken by a program
+grows, if the input size increases 
+
+Asymptotic notations: big o, big theta, big omega
+
+big o - upper bound
+big omega - lower bound
+
+increasing order of common runtimes
+1 < log(n) < n < nlog(n) < n^2 < n^3 < 2^n < n^n
+
+Asymptotic analysis is the measure of how time (runtime) grows with input
+
+Big O notation gives us an upper bound of the rate of growth of a function,
+ie it gives the runtime of an algorithm in the worst case
