@@ -5,4 +5,8 @@ address of the variable, so that we have a reference to the variable and we can
 dereference it and perform some operations is called call by reference. if we
 use pointers as function arguments then we are using call by reference. Call by
 reference can save us a lot of memory because instead of creating a copy of
-large and complex  data type, we just use a reference to it. 
+large and complex  data type, we just use a reference to it.  
+
+If you want to define a very large data in your function, its better to use the
+heap section of memory to do so, otherwise your stack function call might get
+exhausted, leading to stack overflow. Although this doesn't happen very easily.
