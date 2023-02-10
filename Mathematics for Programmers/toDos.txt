@@ -1,0 +1,1 @@
+1) Convert a negative integer to binary and vice versa
