@@ -23,3 +23,26 @@ when a compiler sees an array as function argument, it does not copy the whole
 array, what it actually does is just creates a pointer variable by the same 
 name, instead of creating the whole array, it just creates a pointer to the data
 type of the array, eg pointer to integer
+
+# character arrays and pointers
+
+a string in c has to be null terminated '\0'
+
+just using the name of the array gives us pointer to the first element of the
+array
+
+arrays are always passed to functions by reference, when we pass arrays to 
+functions, we only pass the base address of the array in a pointer variable
+and we do not pass a whole copy of the array
+
+incrementing a pointer by one unit (p+1) increments the address by size of
+the data type that the pointer points to
+
+# pointers and multi-dimensional arrays
+
+for a 2D array
+A[i][j] = *(A[i]+j) = *(*(A+i)+j)
+
+for a 3D array
+A[i][j][k] = *(A[i][j]+k) = *(*(A[i][j]) + k) = *(*(*(A+i)+j)+k)
+
