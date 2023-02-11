@@ -18,9 +18,11 @@ big o - upper bound
 big omega - lower bound
 
 increasing order of common runtimes
-1 < log(n) < n < nlog(n) < n^2 < n^3 < 2^n < n^n
+1 < log(n) < n^0.5 < n < nlog(n) < n^2 < n^3 < 2^n < n^n
 
 Asymptotic analysis is the measure of how time (runtime) grows with input
 
 Big O notation gives us an upper bound of the rate of growth of a function,
 ie it gives the runtime of an algorithm in the worst case
+
+O(log n) is the best time complexity to have

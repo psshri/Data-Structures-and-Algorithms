@@ -1,0 +1,9 @@
+int stores data from -2^31 to 2^31
+
+
+// modular exponentiation
+(a*b)%M = {(a%M)*(b%M)}%M
+
+x^n % M = {(x^n/2)%M * (x^n/2)%M}%M if n is even
+        = {(x%M) * (x^(n-1))%M}%M if n is odd
+        = 1 if n is 0
