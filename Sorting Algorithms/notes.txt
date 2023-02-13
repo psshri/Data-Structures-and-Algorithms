@@ -1,0 +1,31 @@
+sorting algorithms
+- bubble sort 
+- selection sort
+- insertion sort
+- merge sort
+- quick sort
+- heap sort
+- counting sort 
+- radix sort
+
+an in-place sorting algorithm takes constant amount of extra memory
+
+selection sort: most simple and intuitive
+take the min element from the list and move it to leftmost, repeat this process
+inplace, time complexity: O(n^2) 
+
+bubble sort: inplace, stable
+take the max element of the list and move it to rightmost
+time complexity:best case (sorted array as input): O(n); avg & worst case: O(n^2)
+
+insertion sort: inplace
+take an element and move it to as left as possible to construct a sorted array
+time complexity:best case (sorted array as input): O(n); avg & worst case: O(n^2)
+
+merge sort: not-inplace, stable
+time complexity: theta(nlogn)
+divide and conquer, recursive
+
+quick sort: in place (widely used), not stable
+time complexity:average case O(nlogn); worst case O(n^2)
+divide and conquer, recursive
