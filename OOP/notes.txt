@@ -1,0 +1,89 @@
+source: https://www.geeksforgeeks.org/object-oriented-programming-in-cpp/#inheritance
+
+The main aim of OOP is to bind together the data and the functions that operate
+on them, so that no other part of the code can access this data except the 
+function.
+
+OOPs concept: classes, objects, abstraction, encapsulation, polymorphism,
+inheritance
+
+Class
+- user defined data type
+- it holds its own data members and member functions, which can be accessed
+  by creating an instance of the class
+- a class is like a blueprint for an object
+
+Object
+- an object is an instance of a class 
+- when a class is defined, no memory is allocated but when it is instantiated
+  (ie when an object is created) memory is allocated
+
+Encapsulation
+- binding together the data and the functions that manipulate them
+- encapsulation also leads to data abstraction or hiding
+
+Abstraction
+- abstraction means displaying only essential information and hiding the details
+- abstraction can be implemented using classes. the class helps us to group data
+  members and member functions using available access specifiers. a class can
+  decide which data member will be visible to the outside world and which not
+
+Polymorphism
+- C++ supports operator overloading and function overloading
+- operator overloading: the process of making an operator to exhibit different
+  behaviours in different instances is known as operator overloading
+- function overloading: function overloading is using a single function name
+  to perform different types of task
+- polymorphism is extensively used in implementing inheritance 
+
+Inheritance
+- The capability of a class to derive properties and characteristics from 
+  another class is called inheritance
+- sub class: the class that inherits properties from another class is called
+  sub class or derived class
+- super class: the class whose properties are inherited by sub class is called 
+  base class or super class
+
+Dynamic Binding
+- in dynamic binding, the code to be executed in response to function call is 
+  decided at runtime. C++ has virtual functions to support this
+
+Message Passing
+- message passing involves specifying the name of the object, the name of the 
+  function and the information to be sent
+
+
+****************************************************************************
+
+source: https://www.geeksforgeeks.org/c-classes-and-objects/
+
+C++ Classes and Objects
+
+Accessing a data member depends solely on the access control of that data member.
+This access control is given by access modifiers in C++. there are three access
+modifiers: public, private, protected
+
+There are two ways to define a member function
+- inside class definition
+- outside class definition
+
+Constructors
+- constructors are special class members which are called by the compiler
+  every time an object of that class is instantiated. constructors have the same
+  name as the class and may be defined inside or outside the class definition
+- there are three types of constructors: default constructors, parameterized
+  constructors, copy constructors
+- a copy constructor creates a new object, which is exact copy of the existing 
+  object. the compiler provides a default copy constructor to all the classes
+  syntax: class-name (class-name &){}
+
+Destructors
+- destructor is another special member function that is called by the compiler 
+  when the scope of the object ends
+
+we can create an instance of a class just after its definition by writing 
+'instance;' just after } brace
+
+
+start from here
+https://www.geeksforgeeks.org/access-modifiers-in-c/
