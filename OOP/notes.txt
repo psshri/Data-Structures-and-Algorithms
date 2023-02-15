@@ -84,6 +84,73 @@ Destructors
 we can create an instance of a class just after its definition by writing 
 'instance;' just after } brace
 
+********************************************************************
+source: https://www.geeksforgeeks.org/access-modifiers-in-c/   
+
+access modifiers or access specifiers in a class set some restrictions on the 
+class members so that they can't be directly accessed by the outside functions
+
+there are 3 type of access modifiers in c++: public, private, protected; default
+is private
+
+public: all class members declared under public specifier will be available to
+everyone. the data members and member functions declared as public can be 
+accessed by other classes and functions too.
+
+private: only the member functions or the friend functions are allowed to 
+access the private data members of the class
+
+protected: similar to private access modifier, but the class members declared 
+as protected can be accessed by any subclass (derived class) of that class as well
+this access through inheritance can alter the access modifier of the elements 
+of base class in derived class depending on the mode of inheritance.
+
+**********************************************************************
+
+source: https://www.geeksforgeeks.org/friend-class-function-cpp/
+
+FRIEND CLASS AND FUNCTION IN C++
+
+a friend class can access private and protected members of other classes, it is
+sometimes useful to allow a particular class to access private and protected 
+members of other classes
+
+friend function: like a friend class, a friend function can be granted special
+access to private and protected members of a class in C++. they are the non
+member functions that can access and manipulate the private and protected 
+members of the class for they are declared as friends. 
+
+a friend function can be:
+- a global function
+- a member function of another class
+
+syntax for a global function
+friend return_type function_name (arguments); 
+
+syntax for a member function of another class
+friend return_type class_name::function_name (arguments);
+
+member function of another class as friend function: the order in which we 
+define the friend function of another class is important and should be taken
+care of. we always have to define both the classes before the function 
+definition
+
+a friend function is a special function in C++ that inspite of not being a 
+member function of a class, has the privilege to access the private and 
+protected data of a class
+
+a friend function can be decalared in any section of the class ie public, 
+private, protected
+
+imp points of friend functions and classes:
+- can access members w/o the need to inherite the class
+- can act as bridge b/w two classes by accessing their private data
+- friend functions cannot do any run-time polymorphism in their members
+- friendship is not mutual, if class a is a friend of b, then b doesn't become 
+  friend of a
+- friendship is not inherited
+
+**************************************************************
 
 start from here
-https://www.geeksforgeeks.org/access-modifiers-in-c/
+https://www.geeksforgeeks.org/inheritance-in-c/
