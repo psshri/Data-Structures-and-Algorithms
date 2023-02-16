@@ -190,5 +190,3 @@ Types of inheritance
 4. Heirarchichal Inheritance
 5. Hybrid Inheritance
 
-start from multiple inheritance 
-ultiple Inheritance is a feature of C++ where a class can inherit f
