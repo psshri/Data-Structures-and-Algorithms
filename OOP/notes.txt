@@ -189,4 +189,4 @@ Types of inheritance
 3. Multiple Inheritance
 4. Heirarchichal Inheritance
 5. Hybrid Inheritance
-
+6. Multipath Inheritance
