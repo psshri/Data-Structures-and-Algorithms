@@ -152,5 +152,43 @@ imp points of friend functions and classes:
 
 **************************************************************
 
-start from here
-https://www.geeksforgeeks.org/inheritance-in-c/
+INHERITANCE IN C++
+
+source: https://www.geeksforgeeks.org/inheritance-in-c/
+
+the capability of a class to derive properties and characteristics from another
+class is called inheritance 
+
+the new class created is called derived class or child class and the existing 
+class is known as base class or parent class
+
+a derived class does not inherit access to private data members
+
+when a base class is privately inherited by a derived class, then the public 
+members of the base class becomes private members of the derived class and thus
+the public member of the base class are only accessible by the member functions 
+of derived class and not accessible by the objects of the derived class
+
+when a base class is publicly inherited by a derived class, then the public 
+members of the base class become public members of the derived class and thus
+the public member of the base class can be accessed by both the member functions
+of the derived class and by the objects of the derived class
+
+3 Modes of inheritance;
+1. Public Mode: public member of base class becomes public member of derived
+                class and protected members of base class becomes protected
+                members of derived class
+2. Protected Mode: both public and protected members of base class becomes 
+                   protected members of derived class
+3. Private Mode: both public and protected members of the base class will 
+                 become the private in the derived class
+
+Types of inheritance
+1. Single Inheritance
+2. Multilevel Inheritance
+3. Multiple Inheritance
+4. Heirarchichal Inheritance
+5. Hybrid Inheritance
+
+start from multiple inheritance 
+ultiple Inheritance is a feature of C++ where a class can inherit f
