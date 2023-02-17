@@ -1,3 +1,8 @@
+doubt
+https://www.geeksforgeeks.org/multiple-inheritance-in-c/
+
+*******************************************************************************
+
 source: https://www.geeksforgeeks.org/object-oriented-programming-in-cpp/#inheritance
 
 The main aim of OOP is to bind together the data and the functions that operate
@@ -190,3 +195,19 @@ Types of inheritance
 4. Heirarchichal Inheritance
 5. Hybrid Inheritance
 6. Multipath Inheritance
+
+*************************************************************************
+
+INHERITANCE AND FRIENDSHIP
+
+source: https://www.geeksforgeeks.org/inheritance-and-friendship-in-cpp/
+
+difference between inheritance and friendship in C++:
+in C++ friendship is not inherited, if a base class has a friend function, then
+the function doesn't become a friend of the derived classes
+
+****************************************************************************
+
+CONSTRUCTORS
+source: https://www.geeksforgeeks.org/constructors-c/
+
