@@ -1,0 +1,12 @@
+STACK
+
+Stack: a list with the restriction that insertion and deletion can be performed
+only from one end, called the top. LIFO.
+
+Operations:
+- Push
+- Pop
+- Top
+- IsEmpty
+- top
+
