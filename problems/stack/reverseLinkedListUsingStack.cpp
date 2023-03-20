@@ -31,6 +31,11 @@ void linkedList::push(int a, int pos){
         head = temp;
         return;
     }
+    if(pos == 1){
+        temp->next = head;
+        head = temp;
+        return;
+    }
     node* temp2 = head;
     while(pos > 2){
         pos--;
