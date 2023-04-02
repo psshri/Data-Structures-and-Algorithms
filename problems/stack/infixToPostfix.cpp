@@ -6,9 +6,9 @@ using namespace std;
 class node{
     public:
         char data;
-        node* next = NULL;
+        node* next;
         node(){
-            data = '0';
+            data = 't';
             next = NULL;
         }
         node(char c){
@@ -22,17 +22,20 @@ class stack1{
         node* head;
     public:
         void push(char c);
-        char pop();
         bool isEmpty();
-        void printStack();
+        char top();
+        void pop();
 };
 
-void stack1::printStack(){
+void stack1::pop(){
     node* temp = head;
-    while(temp != NULL){
-        cout<<temp->data<<" ";
-        temp = temp->next;
-    }
+    head = head->next;
+    delete(temp);
+    return;
+}
+
+char stack1::top(){
+    return head->data;
 }
 
 bool stack1::isEmpty(){
@@ -42,14 +45,6 @@ bool stack1::isEmpty(){
     else return false;
 }
 
-char stack1::pop(){
-    node* temp = head;
-    head = head->next;
-    char c = temp->data;
-    delete(temp);
-    return c;
-}
-
 void stack1::push(char c){
     node* temp = new node(c);
     temp->next = head;
@@ -57,7 +52,17 @@ void stack1::push(char c){
     return;
 }
 
-bool isOperand(char c){
+bool isLight(char c1, char c2){
+    if(c1 == '+' || c1 == '-'){
+        if(c2 == '*' || c2 == '/'){
+            return true;
+        }
+        else return false;
+    }
+    else return false;
+}
+
+bool isOperator(char c){
     if(c == '+' || c == '-' || c == '*' || c == '/'){
         return true;
     }
@@ -67,40 +72,40 @@ bool isOperand(char c){
 string evaluate(string infix){
     string postfix = "";
     stack1 st;
-    int counter = 0;
+
     for(int i=0; i<infix.length(); i++){
-        char c = infix[i];
-        if(isOperand(c)){
-            st.push(c);
-            cout<<"pushed "<<c<<" into the stack"<<endl;
-            st.printStack();
-            counter = 0;
-        }
-        else{
-            if(counter == 1){
-                postfix += c;
-                char c1 = st.pop();
-                postfix += c1;
+        char c1 = infix[i];
+        if(isOperator(c1)){
+            if(st.isEmpty()){
+                st.push(c1);
             }
             else{
-                counter = 1;
-                postfix += c;
+                // char c2 = st.top();
+                while(isLight(c1, st.top())){
+                    char c2 = st.top();
+                    st.pop();
+                    postfix += c2;
+                    if(st.isEmpty()){
+                        break;
+                    }
+                }
+                st.push(c1);
             }
         }
+        else{
+            postfix += c1;
+        }
     }
-    // while(!st.isEmpty()){
-    //     char c3 = st.pop();
-    //     cout<<"hi"<<endl;
-    //     postfix += c3;
-    // }
+    while(!st.isEmpty()){
+        char c3 = st.top();
+        st.pop();
+        postfix += c3;
+    }
     return postfix;
 }
 
 int main(){
-    string infix;
-    cout<<"Enter the infix expression: "<<endl;
-    cin>>infix;
-
+    string infix = "5+3*8+6/3";
     string postfix = evaluate(infix);
     cout<<"Postfix expression of "<<infix<<" is: "<<postfix<<endl;
 }
