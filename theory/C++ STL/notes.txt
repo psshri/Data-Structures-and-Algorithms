@@ -1,0 +1,40 @@
+C++ STL offers two categories of entities
+- Algorithms
+- Containers
+
+Algorithms
+- Binary search
+- Lower/upper bound
+- Min/max
+- Reverse/rotate
+- Sort/swap
+
+Containers
+- Sequence containers
+- Container adapters
+- Associative containers
+- Unordered associative
+
+Sequence containers
+- Array
+- Vector
+- Deque
+- List
+- Forward list
+
+Container adaptors
+- Stack
+- Queue
+- Priority queue
+
+Associative containers
+- Set 
+- Map
+- MultiSet
+- MultiMap
+
+Unordered Associative
+- Unordered set
+- Unordered map
+- Unordered multiset
+- Unordered multimap
